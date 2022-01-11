@@ -45,3 +45,19 @@ footer {
   footer a {
     text-decoration: none;
     color: cornflowerblue; }
+
+@media screen and (max-width: 660px) {
+  section .descripcion h2 {
+    text-align: center; }
+  section .fotos img {
+    width: 400px; } }
+
+@media screen and (max-width: 420px) {
+  body {
+    font-size: small; }
+  section .fotos img {
+    width: 250px; } }
+
+@media screen and (max-width: 270px) {
+  section .fotos img {
+    width: 100px; } }
