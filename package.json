@@ -1,7 +1,7 @@
 {
   "name": "presentacion-personal-solis",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mi Portfolio para que conozcas mis gustos musicales, mis pasiones y mis metas a futuro",
   "main": "index.js",
   "scripts": {
     "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
