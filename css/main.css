@@ -1,0 +1,164 @@
+* {
+  margin: 0%;
+  padding: 0%; }
+
+html {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: 'Comforter Brush', cursive;
+  font-family: 'Estonia', cursive;
+  font-family: 'Mukta', sans-serif;
+  font-family: 'Poppins', sans-serif; }
+
+body {
+  background-color: #111111; }
+
+header {
+  background-color: #111111;
+  border-bottom: solid #a09797 1px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px; }
+  header h1 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Estonia', cursive;
+    font-family: 'Poppins', sans-serif;
+    color: #314e85; }
+  header h2 a {
+    text-decoration: none;
+    font-size: x-large;
+    color: #314e85; }
+
+section .presentacion {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 3em;
+  padding-bottom: 3em; }
+  section .presentacion h2 {
+    color: cornflowerblue;
+    text-align: center; }
+  section .presentacion img {
+    margin: auto;
+    width: 500px;
+    border-radius: 5px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  section .presentacion img:hover {
+    border-top-left-radius: 10px;
+    animation-duration: 0.25s;
+    border-left: 8px solid cornflowerblue;
+    box-shadow: 0 14px 28px rgba(180, 180, 180, 0.25); }
+
+section .trabajos h2 {
+  text-align: center;
+  color: cornflowerblue;
+  padding: 2em; }
+
+section .trabajos .herramientas {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+
+section .trabajos .herramientas div {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+  padding-bottom: 5em; }
+
+section .trabajos .herramientas div img {
+  width: 100px; }
+
+section form {
+  padding: 5em;
+  color: cornflowerblue; }
+  section form fieldset {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 10px;
+    border-style: dashed;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  section form fieldset:hover {
+    box-shadow: 0 14px 28px rgba(180, 180, 180, 0.25); }
+  section form fieldset input {
+    width: 50em;
+    height: 30px;
+    border-radius: 5px;
+    transition: all 0.5s; }
+  section form fieldset input:focus {
+    border-top-left-radius: 10px;
+    animation-duration: 0.25s;
+    border-left: 8px solid cornflowerblue;
+    border-bottom: 8px solid #4969a7;
+    box-shadow: 0 14px 28px rgba(180, 180, 180, 0.25); }
+  section form fieldset .boton {
+    transition: all 0.1s; }
+  section form fieldset .boton:hover {
+    border-top-left-radius: 10px;
+    animation-duration: 0.25s;
+    border-left: 8px solid cornflowerblue;
+    border-bottom: 7px solid #4969a7;
+    box-shadow: 0 14px 28px rgba(180, 180, 180, 0.25); }
+  section form fieldset .boton:active {
+    animation-duration: 0.25s;
+    border-bottom: 5px solid #4969a7;
+    border-left: 5px solid cornflowerblue; }
+  section form div a {
+    text-decoration: none;
+    color: cornflowerblue; }
+
+footer {
+  border-top: solid #a09797 1px;
+  background-color: #111111;
+  font-size: x-large;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px; }
+  footer a {
+    text-decoration: none;
+    color: #314e85; }
+
+@media screen and (max-width: 1020px) {
+  section .presentacion img {
+    width: 400px; } }
+
+@media screen and (max-width: 888px) {
+  header {
+    font-size: small; }
+    header a {
+      font-size: 20px; }
+  section {
+    font-size: small; }
+    section .presentacion {
+      display: flex;
+      flex-direction: column;
+      gap: 3em; }
+    section .presentacion img {
+      width: 300px; }
+    section .trabajos a img {
+      width: 300px; }
+    section form fieldset input {
+      width: 500px; }
+  footer {
+    font-size: small; } }
+
+@media screen and (max-width: 700px) {
+  section form fieldset input {
+    width: 350px; } }
+
+@media screen and (max-width: 590px) {
+  section form fieldset input {
+    width: 250px; } }
+
+@media screen and (max-width: 445px) {
+  header {
+    font-size: x-small; }
+  section .presentacion img {
+    width: 200px; }
+  section .trabajos a img {
+    width: 200px; }
+  section form fieldset input {
+    width: 200px; } }
+
+@media screen and (max-width: 445px) {
+  section form fieldset input {
+    width: 100px; } }
