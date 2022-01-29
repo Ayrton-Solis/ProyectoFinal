@@ -11,11 +11,11 @@ html{
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(241, 241, 241);
 }
 
 header{
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(75, 156, 189);
     border-bottom: solid rgb(160, 151, 151) 1px;
     display: flex;
     justify-content: space-between;
@@ -25,12 +25,13 @@ header{
         font-family: 'Comforter Brush', cursive;
         font-family: 'Estonia', cursive;
         font-family: 'Poppins', sans-serif;
-        color: rgb(49, 78, 133);
+        color: rgba(255, 136, 0, 0.856);
+        font-size: 40px;
     }
     h2 a{
         text-decoration: none;
         font-size: x-large;
-        color: rgb(49, 78, 133);
+        color: rgb(32, 32, 32);
 }}
 
 section{
@@ -40,7 +41,7 @@ section{
         padding-top: 3em;
         padding-bottom: 3em;
     h2{
-        color: cornflowerblue;
+        color: rgb(32, 32, 32);
         text-align: center;
     }
     img{
@@ -53,12 +54,12 @@ section{
         border-top-left-radius: 10px;
         animation-duration: 0.25s;
         border-left: 8px solid rgb(100, 149, 237);
-        box-shadow: 0 14px 28px rgba(180, 180, 180, 0.25)
+        box-shadow: 0 14px 28px rgb(32, 32, 32);
     }}
     .trabajos{
         h2{
             text-align: center;
-            color: cornflowerblue;
+            color: rgba(255, 136, 0, 0.856);
             padding: 2em;
         }
         .herramientas{
@@ -75,8 +76,8 @@ section{
             width: 100px;
         }}
         form{
-            padding: 5em;
-            color: cornflowerblue;
+            margin: 5em;
+            color: rgba(255, 136, 0, 0.856);
             fieldset{
                 padding: 3em;
                 display: flex;
@@ -87,7 +88,7 @@ section{
                 transition: all 0.3s cubic-bezier(.25,.8,.25,1);
             }
             fieldset:hover{
-                box-shadow: 0 14px 28px rgba(180, 180, 180, 0.25)
+                box-shadow: 0 14px 28px rgb(32, 32, 32);
             }
             fieldset input{
                 width: 50em;
@@ -100,7 +101,7 @@ section{
                 animation-duration: 0.25s;
                 border-left: 8px solid rgb(100, 149, 237);
                 border-bottom: 8px solid rgb(73, 105, 167);
-                box-shadow: 0 14px 28px rgba(180, 180, 180, 0.25)
+                box-shadow: 0 14px 28px rgba(180, 180, 180, 0)
             }
             fieldset .boton{
                 transition: all 0.1s;
@@ -119,20 +120,20 @@ section{
             }
             div a{
                 text-decoration: none;
-                color: cornflowerblue;
+                color: rgba(255, 136, 0, 0.856);
             }
         }
 }
 footer{
     border-top: solid rgb(160, 151, 151) 1px;
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(75, 156, 189);
     font-size: x-large;
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
     a{
         text-decoration: none;
-        color: rgb(49, 78, 133);
+        color: rgba(0, 0, 0, 0.856);
     }
 }
 @media screen and (max-width: 1020px) {
@@ -168,6 +169,11 @@ footer{
     }
 }
 @media screen and (max-width: 700px){
+    header{
+        nav h2 a{
+            font-size: medium;
+        }
+    }
     section form fieldset input{
         width: 350px;
     }
@@ -179,7 +185,9 @@ footer{
 }
 @media screen and (max-width: 445px){
     header{
-        font-size: x-small;
+        h1{
+            font-size: 30px;
+        }
     }
     section{
     .presentacion img{
@@ -193,8 +201,27 @@ footer{
     }
 }
 }
-@media screen and (max-width: 445px){
-    section form fieldset input{
-        width: 100px;
+@media screen and (max-width: 410px){
+    header{
+        h1{
+            font-size: 25px;
+        }
+        nav h2 a{
+            font-size: small;
+        }
+    }
+    section form fieldset{
+        padding: 15px;
+        font-size: x-small;
+    }
+}
+@media screen and (max-width: 360px){
+    section{
+        form{
+            margin: 2em;
+        }
+        form fieldset input{
+            width: 200px;
+        }
     }
 }

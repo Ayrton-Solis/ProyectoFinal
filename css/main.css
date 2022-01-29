@@ -10,10 +10,10 @@ html {
   font-family: 'Poppins', sans-serif; }
 
 body {
-  background-color: #111111; }
+  background-color: #f1f1f1; }
 
 header {
-  background-color: #111111;
+  background-color: #4b9cbd;
   border-bottom: solid #a09797 1px;
   display: flex;
   justify-content: space-between;
@@ -23,11 +23,12 @@ header {
     font-family: 'Comforter Brush', cursive;
     font-family: 'Estonia', cursive;
     font-family: 'Poppins', sans-serif;
-    color: #314e85; }
+    color: rgba(255, 136, 0, 0.856);
+    font-size: 40px; }
   header h2 a {
     text-decoration: none;
     font-size: x-large;
-    color: #314e85; }
+    color: #202020; }
 
 section .presentacion {
   display: grid;
@@ -35,7 +36,7 @@ section .presentacion {
   padding-top: 3em;
   padding-bottom: 3em; }
   section .presentacion h2 {
-    color: cornflowerblue;
+    color: #202020;
     text-align: center; }
   section .presentacion img {
     margin: auto;
@@ -46,11 +47,11 @@ section .presentacion {
     border-top-left-radius: 10px;
     animation-duration: 0.25s;
     border-left: 8px solid cornflowerblue;
-    box-shadow: 0 14px 28px rgba(180, 180, 180, 0.25); }
+    box-shadow: 0 14px 28px #202020; }
 
 section .trabajos h2 {
   text-align: center;
-  color: cornflowerblue;
+  color: rgba(255, 136, 0, 0.856);
   padding: 2em; }
 
 section .trabajos .herramientas {
@@ -67,8 +68,8 @@ section .trabajos .herramientas div img {
   width: 100px; }
 
 section form {
-  padding: 5em;
-  color: cornflowerblue; }
+  margin: 5em;
+  color: rgba(255, 136, 0, 0.856); }
   section form fieldset {
     padding: 3em;
     display: flex;
@@ -78,7 +79,7 @@ section form {
     border-style: dashed;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
   section form fieldset:hover {
-    box-shadow: 0 14px 28px rgba(180, 180, 180, 0.25); }
+    box-shadow: 0 14px 28px #202020; }
   section form fieldset input {
     width: 50em;
     height: 30px;
@@ -89,7 +90,7 @@ section form {
     animation-duration: 0.25s;
     border-left: 8px solid cornflowerblue;
     border-bottom: 8px solid #4969a7;
-    box-shadow: 0 14px 28px rgba(180, 180, 180, 0.25); }
+    box-shadow: 0 14px 28px rgba(180, 180, 180, 0); }
   section form fieldset .boton {
     transition: all 0.1s; }
   section form fieldset .boton:hover {
@@ -104,18 +105,18 @@ section form {
     border-left: 5px solid cornflowerblue; }
   section form div a {
     text-decoration: none;
-    color: cornflowerblue; }
+    color: rgba(255, 136, 0, 0.856); }
 
 footer {
   border-top: solid #a09797 1px;
-  background-color: #111111;
+  background-color: #4b9cbd;
   font-size: x-large;
   display: flex;
   justify-content: space-evenly;
   padding: 10px; }
   footer a {
     text-decoration: none;
-    color: #314e85; }
+    color: rgba(0, 0, 0, 0.856); }
 
 @media screen and (max-width: 1020px) {
   section .presentacion img {
@@ -142,6 +143,8 @@ footer {
     font-size: small; } }
 
 @media screen and (max-width: 700px) {
+  header nav h2 a {
+    font-size: medium; }
   section form fieldset input {
     width: 350px; } }
 
@@ -150,8 +153,8 @@ footer {
     width: 250px; } }
 
 @media screen and (max-width: 445px) {
-  header {
-    font-size: x-small; }
+  header h1 {
+    font-size: 30px; }
   section .presentacion img {
     width: 200px; }
   section .trabajos a img {
@@ -159,6 +162,17 @@ footer {
   section form fieldset input {
     width: 200px; } }
 
-@media screen and (max-width: 445px) {
+@media screen and (max-width: 410px) {
+  header h1 {
+    font-size: 25px; }
+  header nav h2 a {
+    font-size: small; }
+  section form fieldset {
+    padding: 15px;
+    font-size: x-small; } }
+
+@media screen and (max-width: 360px) {
+  section form {
+    margin: 2em; }
   section form fieldset input {
-    width: 100px; } }
+    width: 200px; } }
