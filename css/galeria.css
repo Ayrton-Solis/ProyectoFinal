@@ -26,7 +26,7 @@ header {
 
 section .descripcion {
   padding: 20px;
-  color: rgba(255, 136, 0, 0.856); }
+  color: rgb(32, 32, 32); }
 
 section .fotos {
   display: grid;
